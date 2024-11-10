@@ -1,0 +1,11 @@
+services:
+  order-service:
+    build: ./order
+    ports:
+      - "8080:8080"
+    depends_on:
+      - inventory-service
+  inventory-service:
+    build: ./inventory
+    ports:
+      - "8081:8081"
