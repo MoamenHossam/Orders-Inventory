@@ -1,0 +1,3 @@
+FROM openjdk:21-jdk-alpine
+COPY target/inventory-service-1.jar inventory-service-1.jar
+ENTRYPOINT ["java", "-jar", "inventory-service-1.jar"]
